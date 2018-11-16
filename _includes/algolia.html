@@ -21,8 +21,27 @@ const hitTemplate = function(hit) {
   const content = hit._highlightResult.html.value;
 
   return `
-  <h2><a class="post-link" href="${url}">${title}</a></h2>
-  <div class="post-snippet">${content}</div>
+  <h2 class="post-title"><a href="${url}">${title}</a></h2>
+  <div class="post-meta">
+      <div class="post-time">
+          <i class="fa fa-calendar-alt"></i>
+          <time datetime='${date}'>${date}</time>
+      </div>
+      <ul>
+          <li><a href="${tag}">${tag}</a></li>
+      </ul>
+  </div>
+  <div class="row">
+    <div class="col-sm-2 media">
+      <a href="{{ post.url | relative_url }}">
+        <img src="/${image}" alt="${description}" class="align-self-start mr-3">
+      </a>
+    </div>
+    <div class="post-descr col-sm-10">
+      <p>${content}</p>
+      <span><em>${authors}</em></span>
+    </div>
+  </div>
   `;
 }
 
