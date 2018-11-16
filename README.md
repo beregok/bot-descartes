@@ -1,3 +1,2 @@
-# bot-descartes
-grab articles
- to site osnova
+# osnovajournal
+Site catlalog publish article osnova

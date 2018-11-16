@@ -1,0 +1,87 @@
+{% include header.html %}
+    <div class="wrapper">
+      <div class="content">
+        <div class="container container-center">
+          <div class="row">
+            <div class="col-md-8 offset-md-1">
+              <div class="article">
+                <div class="card">
+                  <h1><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h1>
+                  <div class="post-meta">
+                    <div class="post-time">
+                      <i class="fa fa-calendar-alt"></i>
+                      <time>{{ page.date | date_to_string }}</time>
+                    </div>
+                    <ul>
+                      {% for tag in page.tags %}
+                        <li><a href="{{ '/tag/' | append: tag | relative_url }}">{{ tag }}</a></li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-3 media">
+                      {% if page.image %}
+                      <img src="{{ site.url }}/{{ page.image }}" alt="{{ post.description }}" class="figure-img img-fluid">
+                      {% endif %}
+                    </div>
+                    <div class="post-content col-sm-9">
+                      {% if page.toc %}
+                        {% include toc.html html=content class='toc' %}
+                        {% endif %}
+                        {% if page.authors %}
+                        <p><em>{{ page.authors }}</em></p>
+                        {% endif %}
+                        {{ content }}
+                        {% if page.resources %}
+				            <div>
+                      {% for resource in page.resources %}
+                        <a href="{{ site.url }}/{{ resource.link }}" class="btn btn-success"><i class="far fa-file-pdf"></i> <b>Завантажити</b> {{ page.slug }}.pdf</a>
+                        {% endfor %}
+                      </div>
+                      {% endif %}
+                      <br>
+                      {% include share.html %}
+                    </div>
+                  </div>
+                    {% if page.tags.size == 1 %}
+                    <h2>Читайте ще</h2>
+                    {% elsif page.tags.size > 1 %}
+                    <h2>Схожі статті</h2>
+                    {% endif %}
+                    <ul>
+                      {% assign posts = site.posts | sort: 'title' %}
+                      {% for post in posts %}
+                      {% assign isAdded = false %}
+                      {% for tagAll in post.tags %}
+                      {% for tag in page.tags %}
+                      {% if tagAll == tag and page.title != post.title and isAdded == false %}
+                      <li><a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></li>
+                      {% assign isAdded = true %}
+                      {% endif %}
+                      {% endfor %}
+                      {% endfor %}
+                      {% endfor %}
+                    </ul>
+                    <h2>Нові статті</h2>
+                    <ul>
+                      {% for post in site.posts limit:5 %}
+                      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                      {% endfor %}
+                    </ul>
+                    <blockquote class="note">
+                      <p><small><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Ліцензія Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br>Всі статті ліцензовано на умовах <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Ліцензії Creative Commons Із Зазначенням Авторства — Некомерційна — Без Похідних 4.0 Міжнародна</a>.</a>
+                      </small></p>
+                    </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 hidden-xs">
+              {% include sidebar-post.html %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
