@@ -33,7 +33,7 @@ google_analytics_key:
 
 permalink: /:year/:month/:title
 
-plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap]
+plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap, jekyll-algolia]
 
 algolia:
   application_id: JW3EBI2XYO
