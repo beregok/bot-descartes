@@ -89,7 +89,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.12)
   jekyll (~> 3.6)
-  jekyll-algolia
+  jekyll-algolia (~> 1.0)
   jekyll-feed (= 0.9.3)
   jekyll-paginate
   jekyll-seo-tag (= 2.3.0)
