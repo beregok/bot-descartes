@@ -1,7 +1,9 @@
 ---
 layout: page
 ---
-
+<div id="search-searchbar"></div> <!-- Algolia -->
+<small>Введіть слово або фразу для пошуку</small>
+<section id="search-hits"></section>
 {% for post in paginator.posts %}
 <h2 class="post-title">
     <a href="{{ post.url | relative_url }}">

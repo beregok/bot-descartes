@@ -19,10 +19,25 @@ const hitTemplate = function(hit) {
   const url = hit.url;
   const title = hit._highlightResult.title.value;
   const content = hit._highlightResult.html.value;
+  const image = hit.image;
 
   return `
   <h2 class="post-title"><a href="${url}">${title}</a></h2>
-  <div class="post-descr col-sm-11"><p>${content}</p></div>
+  <div class="post-meta">
+      <div class="post-time">
+          <i class="fa fa-calendar-alt"></i>
+          <time datetime='${date}'>${date}</time>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2 media">
+        <img src="${image}" alt="" class="align-self-start mr-3">
+    </div>
+    <div class="post-descr col-sm-10">
+      <p>${content}</p>
+      <span><em></em></span>
+    </div>
+  </div>
   `;
 }
 
@@ -50,18 +65,15 @@ search.start();
 <style>
 .ais-search-box {
   max-width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
-.post-item {
-  margin-bottom: 30px;
-}
-.post-link .ais-Highlight {
+.post-title .ais-Highlight {
   color: #111;
   font-style: normal;
   text-decoration: underline;
   background-color: yellow;
 }
-.post-snippet .ais-Highlight {
+.post-descr .ais-Highlight {
   color: #2a7ae2;
   font-style: normal;
   font-weight: bold;
