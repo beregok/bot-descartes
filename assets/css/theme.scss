@@ -199,6 +199,33 @@ ul.sideBarTags {
 }
 
 //********************************************************
+//                    Теги
+//********************************************************
+
+.tags a{
+    text-decoration: none;
+}
+.tags span{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+.tags .tag{
+   border: 1px solid #6D6E6B;
+   border-radius: 3px;
+   padding: 2px 4px;
+   color: #a9b1b5;
+   transition: all 300ms ease-in-out;
+}
+.tags .tag:hover{
+     background-color: #424242;
+}
+.tags a:hover{
+    //font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+//********************************************************
 //                    Пост
 //********************************************************
 h2.post-title {

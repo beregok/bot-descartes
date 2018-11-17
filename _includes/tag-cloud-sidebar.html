@@ -1,9 +1,9 @@
-<div class="sidebar">
+<div class="sidebar tags">
   <h2><i class="fas fa-tags"></i> Мітки</h2>
   <hr>
   {% assign tags = site.tags | sort %}
   {% for tag in tags %}
-   <span class="">
+   <span class="tag">
       <a href="{{ '/tag/' | append: tag[0] | relative_url }}" data-toggle="tooltip" data-placement="right" title="{{ tag[1].size }}" style="font-size: {{ tag | last | size  |  times: 5 | plus: 85  }}%">
               {{ tag[0] | replace:'-', ' ' }}
       </a>
