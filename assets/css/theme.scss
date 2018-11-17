@@ -81,7 +81,7 @@ a {
   color: $accent-color;
 }
 a:hover {
-    color: #52B54B;
+    color: #FFEACF;// #52B54B;
 }
 
 //********************************************************
@@ -231,7 +231,6 @@ ul.sideBarTags {
 h2.post-title {
   padding-top: 10px;
   text-align: left;
-
 }
 div.post-meta {
   border-width: 1px 0;
@@ -380,8 +379,6 @@ nav.shrink {
   color: #fff;
   box-sizing: border-box;
   background: #424242;
-  //height: 100%;
-  //margin: 20px;
   margin-bottom: 10px;
   padding: 20px;
   outline: 1px dashed #98abb9;
