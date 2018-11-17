@@ -180,6 +180,23 @@ ul.sideBarTags {
     margin-left: -1.5em;
   }
 }
+.sidebar hr{
+    border: 0;
+    border-top: 1px solid #dee2e5;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    position: relative;
+    background-color: #fff;
+}
+
+.sidebar hr:before{
+     content: '';
+    width: 30px;
+    height: 4px;
+    background-color: #61d4e6;
+    position: absolute;
+    bottom: 0;
+}
 
 //********************************************************
 //                    Пост
