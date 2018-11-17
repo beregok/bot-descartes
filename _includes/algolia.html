@@ -19,25 +19,14 @@ const hitTemplate = function(hit) {
   const url = hit.url;
   const title = hit._highlightResult.title.value;
   const content = hit._highlightResult.html.value;
-  const image = hit.image;
 
   return `
+  <div class="post-time">
+      <i class="fa fa-calendar-alt"></i>
+      <time datetime='${date}'>${date}</time>
+  </div>
   <h2 class="post-title"><a href="${url}">${title}</a></h2>
-  <div class="post-meta">
-      <div class="post-time">
-          <i class="fa fa-calendar-alt"></i>
-          <time datetime='${date}'>${date}</time>
-      </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-2 media">
-        <img src="${image}" alt="" class="align-self-start mr-3">
-    </div>
-    <div class="post-descr col-sm-10">
-      <p>${content}</p>
-      <span><em></em></span>
-    </div>
-  </div>
+  <div class="post-descr"><p>${content}</p></div>
   `;
 }
 
@@ -46,7 +35,7 @@ search.addWidget(
   instantsearch.widgets.searchBox({
     container: '#search-searchbar',
     placeholder: 'Яку статтю ви шукаєте?'
-
+    poweredBy: true // This is required if you're on the free Community plan
   })
 );
 
