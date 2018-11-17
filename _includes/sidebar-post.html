@@ -1,4 +1,20 @@
 <div class="sidebar">
+<div class="container-promo">
+  <div class="post-promo">
+    <h3>ДЕКАРТ</h3>
+    <p>Каталог статтей з математики.</p>
+  </div>
+  <div class="boxline">
+    <div class="box-sm red"></div>
+    <div class="box-sm orange"></div>
+    <div class="box-sm yellow "></div>
+    <div class="box-sm green "></div>
+    <div class="box-sm blue "></div>
+    <div class="box-sm purple"></div>
+  </div>
+</div>
+</div>
+<div class="sidebar">
   <h2>Пошук</h2>
   <small>Введіть слово або фразу для пошуку</small>
   <div id="search-searchbar"></div> <!-- Algolia -->
@@ -13,6 +29,5 @@
   </span>
   {% endfor %}
   <h4>Інше</h4>
-  <a href="{{ post.url | relative_url }}/tags">Усі мітки</a><br>
   <a href="{{ post.url | relative_url }}/admin"><small>Скрит тегів</small></a>  <a href="{{ post.url | relative_url }}/stats"><small>Cтатистика сайту..</small></a>
 </div>
