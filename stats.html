@@ -10,13 +10,13 @@ layout: page
 <div id="total-words">Загальна кількість слів:</div>
 <div id="words-per-post">Середня кількість слів в статті:</div>
 
-<h1>Кількість статтей за місяць</h1>
+<h1>Кількість статей за місяць</h1>
 <canvas id="postsPerMonth" width="400" height="300"></canvas>
 
 <h1>Кількість слів на місяць</h1>
 <canvas id="wordsPerMonth" width="400" height="300"></canvas>
 
-<h1>Кількість статтей на рік</h1>
+<h1>Кількість статей на рік</h1>
 <canvas id="postsPerYear" width="400" height="300"></canvas>
 
 <h1>Розподіл міток</h1>
@@ -83,7 +83,7 @@ layout: page
         data: {
             labels: Object.keys(postsPerMonth),
             datasets: [{
-                label: 'Статтей',
+                label: 'Статей',
                 data: Object.values(postsPerMonth),
                 backgroundColor: accentColor,
                 borderWidth: 1
@@ -128,7 +128,7 @@ layout: page
         data: {
             labels: Object.keys(postsPerYear),
             datasets: [{
-                label: 'Кількість статтей',
+                label: 'Кількість статей',
                 data: Object.values(postsPerYear),
                 backgroundColor: accentColor,
                 borderWidth: 1
@@ -203,6 +203,6 @@ layout: page
 
     concatBoldTextToELement('total-words', totalWords);
     concatBoldTextToELement('total-posts', totalPosts);
-    concatBoldTextToELement('words-per-post', totalWords / totalPosts);
+    concatBoldTextToELement('words-per-post', Math.round(totalWords / totalPosts));
 
 </script>
