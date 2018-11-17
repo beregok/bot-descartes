@@ -11,7 +11,7 @@ layout: page
           <li class="archive_list">
             <time>{{ post.date | date_to_string }}</time>
             <a class="archive_list_article_link" href='{{ post.url | relative_url }}'>{{post.title}}</a>
-            <p>{{post.description}}</p>
+            <p>{{ post.content | strip_html | truncatewords:50 }}</p>
           </li>
           {% endif %}
         {% endfor %}
