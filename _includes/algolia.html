@@ -21,12 +21,9 @@ const hitTemplate = function(hit) {
   const content = hit._highlightResult.html.value;
 
   return `
-  <div class="post-time">
-      <i class="fa fa-calendar-alt"></i>
-      <time datetime='${date}'>${date}</time>
-  </div>
+  <i class="fa fa-calendar-alt"></i><time datetime='${date}'> ${date}</time>
   <h2 class="post-title"><a href="${url}">${title}</a></h2>
-  <div class="post-descr"><p>${content}</p></div>
+  <p>${content}</p>
   `;
 }
 
@@ -35,7 +32,6 @@ search.addWidget(
   instantsearch.widgets.searchBox({
     container: '#search-searchbar',
     placeholder: 'Яку статтю ви шукаєте?'
-    poweredBy: true // This is required if you're on the free Community plan
   })
 );
 
