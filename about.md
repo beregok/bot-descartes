@@ -37,6 +37,11 @@ title: Про сайт
 ### Transparent Textures
 <https://www.transparenttextures.com/>
 
+## Елементи дизайну
+
+### Replacement For Normal <hr> Tag 
+<https://codepen.io/alexakasanjeev/pen/RPxGXY>
+
 ## Діаграми та графіки
 
 ### Chart.js

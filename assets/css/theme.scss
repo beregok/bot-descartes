@@ -163,9 +163,13 @@ ul.share-buttons {
 //********************************************************
 //                    СайдБар
 //********************************************************
+
+.sidebar ul {
+  padding-left: 5px;
+}
 .sidebar li {
   margin-top: .7em;
-  line-height: 1em;
+  line-height: 1.05em;
 }
 ul.sideBarTags {
   list-style: none;
@@ -183,6 +187,7 @@ ul.sideBarTags {
 h2.post-title {
   padding-top: 10px;
   text-align: left;
+
 }
 div.post-meta {
   border-width: 1px 0;
