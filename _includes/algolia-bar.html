@@ -20,10 +20,8 @@ const hitTemplate = function(hit) {
   const title = hit._highlightResult.title.value;
   const content = hit._highlightResult.html.value;
 
-  return `  
-  <ul>
-    <li><a href="${url}">${title}</a></li>
-  </ul>
+  return `
+  <a href="${url}">${title}</a>
   `;
 }
 
@@ -52,16 +50,10 @@ search.start();
   max-width: 100%;
   margin-bottom: 10px;
 }
-.post-title .ais-Highlight {
+.ais-Highlight {
   color: #111;
   font-style: normal;
   text-decoration: underline;
-  background-color: yellow;
-}
-.post-descr .ais-Highlight {
-  color: #2a7ae2;
-  font-style: normal;
-  font-weight: bold;
   background-color: yellow;
 }
 </style>
