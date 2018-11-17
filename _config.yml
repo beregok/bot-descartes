@@ -1,6 +1,6 @@
 # Jekyll configuration
 name: bot Декарт
-description: Bot-Декарт. Каталог статтей з математики
+description: Bot-Декарт. Каталог статей з математики
 
 # Url is currently only used only for the RSS feed in feed.xml
 url: https://bot-descartes.netlify.com/
@@ -9,7 +9,7 @@ url: https://bot-descartes.netlify.com/
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 baseurl: '/'
 
-author: Bot_Декарт. Каталог статтей з математики
+author: Bot_Декарт. Каталог статей з математики
 copyright: 2018
 
 share:
