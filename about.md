@@ -13,7 +13,7 @@ title: Про сайт
 
 ### Плагіни та дповнення Jekyll
 
-Базова тема, Теги, Карта сайту, СЕО, Пагінатор, Потік вміст, Підсвітка синтаксису, Статистика
+Базова тема, Теги, Карта сайту, СЕО, Пагінатор, Потік вміст, Підсвітка синтаксису, Статистика, Aalgolia
 
 ## Фреймворк БутСтрап
 <https://getbootstrap.com>
@@ -49,6 +49,11 @@ title: Про сайт
 
 ## Form NetLify
 <https://www.netlify.com/docs/form-handling/>
+
+# Пошук
+
+## Algolia for Jekyll
+<https://community.algolia.com/jekyll-algolia/>
 
 # Як копі-пастяться статті
 
