@@ -32,15 +32,25 @@ title: Про сайт
 ### Іконки від  Font Awesome
 <https://fontawesome.com>
 
-## Зображення тла
-
-### Transparent Textures
-<https://www.transparenttextures.com/>
-
 ## Елементи дизайну
 
-### Replacement For Normal <hr> Tag 
+### Банер
+
+Replacement For Normal <hr> Tag
+
 <https://codepen.io/alexakasanjeev/pen/RPxGXY>
+
+### Зображення тла
+
+Transparent Textures
+
+<https://www.transparenttextures.com/>
+
+## Модальна галерея
+
+Fancybox
+
+<https://fancyapps.com/fancybox/3/>
 
 ## Діаграми та графіки
 
@@ -59,6 +69,14 @@ title: Про сайт
 
 ### Algolia for Jekyll
 <https://community.algolia.com/jekyll-algolia/>
+
+## Тестування
+
+### Як виглядає сайт на різних пристроях
+[http://webmark.com.ua](http://webmark.com.ua/mobile/?url=https%3A%2F%2Fbot-descartes.netlify.com)
+
+### Швидкість завантаження
+[https://developers.google.com/speed/pagespeed/insights/](https://developers.google.com/speed/pagespeed/insights/?hl=ru&url=https%3A%2F%2Fbot-descartes.netlify.com%2F&tab=desktop)
 
 # Як копі-пастяться статті
 
