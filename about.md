@@ -76,6 +76,9 @@ Fancybox
 [http://webmark.com.ua](http://webmark.com.ua/mobile/?url=https%3A%2F%2Fbot-descartes.netlify.com)
 
 ### Швидкість завантаження
+
+[https://tools.pingdom.com/](https://tools.pingdom.com/#59ca31a57d800000)
+
 [https://developers.google.com/speed/pagespeed/insights/](https://developers.google.com/speed/pagespeed/insights/?hl=ru&url=https%3A%2F%2Fbot-descartes.netlify.com%2F&tab=desktop)
 
 # Як копі-пастяться статті
