@@ -21,7 +21,9 @@
                   <div class="row">
                     <div class="col-sm-3 media">
                       {% if page.image %}
-                      <img src="{{ site.url }}/{{ page.image }}" alt="{{ post.description }}" class="figure-img img-fluid">
+                      <a href="{{ site.url }}/{{ page.image }}" data-fancybox="images" data-caption="{{ page.description }}">
+                        <img src="{{ site.url }}/{{ page.image }}" alt="{{ page.description }}" class="figure-img img-fluid">
+                      </a>
                       {% endif %}
                     </div>
                     <div class="post-content col-sm-9">
@@ -88,5 +90,6 @@
       {% include algolia-bar.html %}
       {% include footer.html %}
     </div>
+    {% include fancybox-js.html %}
   </body>
 </html>
