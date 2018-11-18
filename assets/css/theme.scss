@@ -259,12 +259,6 @@ blockquote{
 }
 
 blockquote.note p,
-blockquote.warning p{
-  height: 48px;
-  vertical-align: middle;
-  padding: 10px;
-  font-style: normal;
-}
 
 .note {
   font-style: normal;
@@ -272,20 +266,7 @@ blockquote.warning p{
   border: 0;
   padding-left: 30px;
 }
-.note:before {
-  font-style: normal;
-  content: "\f06a";
-  font-size: 2em;
-  font-family: FontAwesome;
-  left: 0;
-  position:absolute;
-  top: 0;
-  color: $note-color;
-}
-.warning:before {
-  content: "\f071";
-  color: $warning-color;
-}
+
 
 //********************************************************
 //                    Заголовок
