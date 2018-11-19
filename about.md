@@ -75,6 +75,32 @@ Fancybox
 ### Compress HTML in Jekyll
 <https://github.com/penibelst/jekyll-compress-html>
 
+### Конвертація зображень в формат .webp
+
+#### Бібліотека libwebp
+
+<https://developers.google.com/speed/webp/>
+
+{% highlight bash %}
+cwebp -q 80 42-94-70625-01.jpg -o 42-94-70625-01.wepp
+Saving file '42-94-70625-01.wepp'
+File:      42-94-70625-01.jpg
+Dimension: 1654 x 2126
+Output:    231766 bytes Y-U-V-All-PSNR 44.30 46.96 46.19   44.93 dB
+block count:  intra4: 4648
+              intra16: 9184  (-> 66.40%)
+              skipped block: 8417 (60.85%)
+bytes used:  header:            627  (0.3%)
+             mode-partition:  23768  (10.3%)
+ Residuals bytes  |segment 1|segment 2|segment 3|segment 4|  total
+    macroblocks:  |       3%|       8%|      25%|      62%|   13832
+      quantizer:  |      27 |      26 |      22 |      16 |
+   filter level:  |       8 |       5 |      10 |      38 |
+{% endhighlight %}
+
+#### GUI XnConvert 
+<https://www.xnview.com/en/xnconvert/>
+
 ## Тестування та метрика
 
 ### Як виглядає сайт на різних пристроях
