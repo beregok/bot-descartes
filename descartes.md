@@ -5,8 +5,8 @@ title: Рене Декарт
 
 
 
-<a href="/assets/images/Frans_Hals_-_Portret_van_René_Descartes.jpg" data-fancybox="images" data-caption="Рене Декарт. Французький філософ і математик. У філософії описував дуалізм душі та тіла. У геометрії запропонував нову систему координат, яка зараз носить назву - декартова">
-  <img src="/assets/images/Frans_Hals_-_Portret_van_René_Descartes.jpg" alt="Рене Декарт. Французький філософ і математик. У філософії описував дуалізм душі та тіла. У геометрії запропонував нову систему координат, яка зараз носить назву - декартова" class="rounded mx-auto d-block" width="400" height="auto">
+<a href="/assets/images/Frans_Hals_-_Portret_van_René_Descartes.webp" data-fancybox="images" data-caption="Рене Декарт. Французький філософ і математик. У філософії описував дуалізм душі та тіла. У геометрії запропонував нову систему координат, яка зараз носить назву - декартова">
+  <img src="/assets/images/Frans_Hals_-_Portret_van_René_Descartes.webp" alt="Рене Декарт. Французький філософ і математик. У філософії описував дуалізм душі та тіла. У геометрії запропонував нову систему координат, яка зараз носить назву - декартова" class="rounded mx-auto d-block" width="400" height="auto">
 </a>
 
 <h1 class="rene text-center">René Descartes</h1>
