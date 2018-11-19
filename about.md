@@ -13,7 +13,7 @@ title: Про сайт
 
 ### Плагіни та дповнення Jekyll
 
-Базова тема, Теги, Карта сайту, СЕО, Пагінатор, Потік вміст, Підсвітка синтаксису, Статистика, Aalgolia
+Базова тема, Теги, Карта сайту, СЕО, Пагінатор, Потік вміст, Підсвітка синтаксису, Статистика, Aalgolia, Compress HTML
 
 ## Фреймворк БутСтрап
 <https://getbootstrap.com>
@@ -70,7 +70,12 @@ Fancybox
 ### Algolia for Jekyll
 <https://community.algolia.com/jekyll-algolia/>
 
-## Тестування
+## Оптимізація
+
+### Compress HTML in Jekyll
+<https://github.com/penibelst/jekyll-compress-html>
+
+## Тестування та метрика
 
 ### Як виглядає сайт на різних пристроях
 [http://webmark.com.ua](http://webmark.com.ua/mobile/?url=https%3A%2F%2Fbot-descartes.netlify.com)

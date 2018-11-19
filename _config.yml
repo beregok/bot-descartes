@@ -50,4 +50,14 @@ kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
   hard_wrap: true
 
+# Compress
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
 exclude: ['README.md']
