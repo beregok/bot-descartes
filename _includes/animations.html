@@ -1,0 +1,26 @@
+<script type="text/javascript">
+$('.indi .content').hover(
+function () {
+var text = $(this).find('span').text();
+var color = $(this).css('background-color');
+setTimeout(function () {
+$('h2.des').text(text);
+$('body').css('background-color', color);
+}, 0);
+setTimeout(function () {
+$('h2.des').text(text);
+$('h2.title').addClass('up');
+}, 200);
+setTimeout(function () {
+$('h2.des').addClass('down');
+}, 600);
+}, function () {
+setTimeout(function () {
+$('h2.des').removeClass('down');
+$('body').css('background-color', 'transparent');
+}, 0);
+setTimeout(function () {
+$('h2.title').removeClass('up');
+}, 100);
+});
+</script>
