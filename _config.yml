@@ -54,10 +54,11 @@ kramdown:
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
-  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
-  profile: false
-  blanklines: false
+  endings: all
   ignore:
-    envs: []
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
 
 exclude: ['README.md']

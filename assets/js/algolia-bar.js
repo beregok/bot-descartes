@@ -1,8 +1,7 @@
-<script type="text/javascript">
 const search = instantsearch({
-  appId: '{{ site.algolia.application_id }}',
-  apiKey: '{{ site.algolia.search_only_api_key }}',
-  indexName: '{{ site.algolia.index_name }}',
+  appId: 'JW3EBI2XYO',
+  apiKey: '7153d43fba3a2319ca8ba31f915b9454',
+  indexName: 'bot-descartes',
   searchParameters: {
     restrictSearchableAttributes: [
       'title',
@@ -38,16 +37,3 @@ search.addWidget(
   })
 );
 search.start();
-</script>
-<style>
-.ais-search-box {
-  max-width: 100%;
-  margin-bottom: 10px;
-}
-.ais-Highlight {
-  color: #111;
-  font-style: normal;
-  text-decoration: underline;
-  background-color: yellow;
-}
-</style>
