@@ -61,6 +61,6 @@ compress_html:
   profile: false
   startings: [html, head, body]
 
-include: ['.htacces']
+#include: ['.htacces']
 
 exclude: ['README.md']

@@ -25,8 +25,11 @@ layout: compress
                   <div class="row">
                     <div class="col-sm-3 media">
                       {% if page.image %}
-                      <a href="{{ site.url }}/{{ page.image }}" data-fancybox="images" data-caption="{{ page.description }}">
-                        <img src="{{ site.url }}/{{ page.image }}" alt="{{ page.description }}" class="figure-img img-fluid">
+                      <a href="{{ site.url }}/{{ page.image | replace: "webp", "jpg" }}" data-fancybox="images" data-caption="{{ page.description }}">
+                        <picture>
+                          <source srcset="{{ site.url }}/{{ page.image }}" type="image/webp">
+                            <img src="{{ site.url }}/{{ page.image | replace: "webp", "jpg" }}" alt="{{ page.description }}" class="figure-img img-fluid">
+                        </picture>
                       </a>
                       {% endif %}
                     </div>
