@@ -24,8 +24,8 @@ layout: page
     {% if post.image %}
     <a href="{{ post.url | relative_url }}">
       <picture>
-        <source srcset="{{ site.url }}/{{ post.image }}" type="image/webp">
-        <img src="{{ site.url }}/{{ post.image | replace: "webp", "jpg" }}" alt="{{ post.description }}" class="align-self-start mr-3">
+        <source srcset="{{ site.url }}/{{ post.image | replace: "jpg", "webp" }}" type="image/webp">
+        <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.description }}" class="align-self-start mr-3">
       </picture>
     </a>
     {% endif %}
