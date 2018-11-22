@@ -4,7 +4,7 @@
   {% assign tags = site.tags | sort %}
   {% for tag in tags %}
    <span class="tag">
-      <a href="{{ '/tag/' | append: tag[0] | relative_url }}" data-toggle="tooltip" data-placement="right" title="{{ tag[1].size }}" style="font-size: {{ tag | last | size  |  times: 5 | plus: 85  }}%">
+      <a href="{{ '/tag/' | append: tag[0] | relative_url }}" data-toggle="tooltip" data-placement="right" title="{{ tag[1].size }}" style="font-size: {{ tag | last | size  |  times: 1 | plus: 10  }}pt">
               {{ tag[0] | replace:'-', ' ' }}
       </a>
   </span>
