@@ -19,7 +19,7 @@ const hitTemplate = function(hit) {
   const content = hit._highlightResult.html.value;
 
   return `
-  <a href="${url}">${title}</a>
+    <i class="far fa-lightbulb"></i> <a href="${url}">${title}</a>
   `;
 }
 search.addWidget(
