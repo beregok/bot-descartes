@@ -40,6 +40,9 @@ Replacement For Normal <hr> Tag
 
 <https://codepen.io/alexakasanjeev/pen/RPxGXY>
 
+### Анімація тексту JS Typewriter 
+<https://codepen.io/hi-im-si/pen/DHoup>
+
 ### Зображення тла
 
 Transparent Textures
@@ -98,7 +101,7 @@ bytes used:  header:            627  (0.3%)
    filter level:  |       8 |       5 |      10 |      38 |
 {% endhighlight %}
 
-#### GUI XnConvert 
+#### GUI XnConvert
 <https://www.xnview.com/en/xnconvert/>
 
 ## Тестування та метрика
