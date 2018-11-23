@@ -2,11 +2,15 @@
   <h2><i class="fas fa-tags"></i> Мітки</h2>
   <hr>
   {% assign tags = site.tags | sort %}
+  {% assign maxsize = site.tags | size %}
   {% for tag in tags %}
    <span class="tag">
-      <a href="{{ '/tag/' | append: tag[0] | relative_url }}" data-toggle="tooltip" data-placement="right" title="{{ tag[1].size }}" style="font-size: {{ tag | last | size  |  times: 1 | plus: 10  }}pt">
-              {{ tag[0] | replace:'-', ' ' }}
+      <a href="{{ '/tag/' | append: tag[0] | relative_url }}" data-toggle="tooltip" data-placement="right" title="{{ tag[1].size }}" id="{{ tag[1].size }}" style="font-size: {{ tag | last | size  |  times: 1 | plus: 10  }}pt">
+        {{ tag[0] | replace:'-', ' ' }}
       </a>
+      <script type="text/javascript">
+          document.getElementById("{{ tag[1].size }}").style.fontSize = ((24*({{ tag[1].size }}-1))/({{ maxsize }}-1)+10)+'pt';
+      </script>
   </span>
   {% endfor %}
 </div>
