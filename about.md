@@ -40,7 +40,7 @@ Replacement For Normal <hr> Tag
 
 <https://codepen.io/alexakasanjeev/pen/RPxGXY>
 
-### Анімація тексту JS Typewriter 
+### Анімація тексту JS Typewriter
 <https://codepen.io/hi-im-si/pen/DHoup>
 
 ### Зображення тла
@@ -48,6 +48,9 @@ Replacement For Normal <hr> Tag
 Transparent Textures
 
 <https://www.transparenttextures.com/>
+
+### JavaScript Tag Cloud
+<https://geekthis.net/post/javascript-tag-cloud/>
 
 ## Модальна галерея
 
