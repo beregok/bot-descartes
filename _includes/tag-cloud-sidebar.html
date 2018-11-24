@@ -6,15 +6,19 @@
   <script type="text/javascript">
     function tagcloud(dom,tag) {
       var elements = dom.getElementsByTagName(tag);
-    	var minFont = 11;
-    	var maxFont = 24;
+    	var minFont = 11; /* мінімальний розмір шрифту */
+    	var maxFont = 24; /* максимальний розмір шрифту */
     	var size = 0;
     	var i = 0;
     	var data = 0;
+      /* Знаходимо всі елементи з заданим пареметром*/
     	for(i = 0; i < elements.length; ++i) {
     		data = parseInt(elements[i].getAttribute('title'),10);
+        /* Лінійна залежність, розмір шрифту розподілиться в залежності
+        частоти розподілу міток від їх загальної кількості при чому,
+        загальна кількість міток >= частоті входжень, інакше не можливо */
     		size = ((data - 1) * (maxFont - minFont)) / ({{ maxsize }} - 1) + minFont;
-    		elements[i].style.fontSize = size + "pt";
+    		elements[i].style.fontSize = size + "pt"; /* додаєм атрибут стилю*/
     	}
     }
   </script>
@@ -26,7 +30,7 @@
   </span>
   {% endfor %}
   <script type="text/javascript">
-    var tc = document.getElementById('tagcloud');
-    tagcloud(tc,'a');
+    var tc = document.getElementById('tagcloud'); /* Підключаємо функцію пошуку лементів у батьківському*/
+    tagcloud(tc,'a'); /* Змінюємо атрибути */
   </script>
 </div>
