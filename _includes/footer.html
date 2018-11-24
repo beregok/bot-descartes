@@ -5,21 +5,21 @@
           <div class="col-md-2 coffset-md-1 col-sm-5 col-xs-12 statistics stats-el1">
             <div class="stats">
               <i class="fas fa-american-sign-language-interpreting fa-2x"></i>
-              <p id="total-words-f"></p>
+              <p id="total-words-f" class="count"></p>
               <span>Слів</span>
             </div>
           </div>
           <div class="col-md-2 offset-md-1 col-sm-5 col-xs-12 statistics stats-el2">
             <div class="stats">
               <i class="fas fa-glass-martini-alt fa-2x"></i>
-              <p>{{ site.posts.size }}</p>
+              <p class="count">{{ site.posts.size }}</p>
               <span>Статей</span>
             </div>
           </div>
           <div class="col-md-2 offset-md-1 col-sm-5 col-xs-12 statistics stats-el3">
             <div class="stats">
               <i class="fas fa-cat fa-2x"></i>
-              <p>{{ site.tags | size % }}</p>
+              <p class="count">{{ site.tags | size % }}</p>
               <span>Міток</span>
             </div>
           </div>
@@ -32,7 +32,7 @@
         </div>
     </div>
 </footer>
-<script>
+<script type="text/javascript">
     var totalWords = [
         {% for post in site.posts %}
             {{ post.content | number_of_words }},
@@ -40,6 +40,7 @@
     ].reduce((a, b) => a + b, 0);
     function concatBoldTextToELement(id) {
       document.getElementById(id).innerHTML = totalWords;
-    }    
+    }
     concatBoldTextToELement('total-words-f');
 </script>
+<script src="{{ '/assets/js/count-animate.js' | relative_url }}" charset="utf-8"></script>
