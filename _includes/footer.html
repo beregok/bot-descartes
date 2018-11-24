@@ -38,10 +38,8 @@
             {{ post.content | number_of_words }},
         {% endfor %}
     ].reduce((a, b) => a + b, 0);
-    function concatBoldTextToELement(id, text) {
-        var abvgd = document.createElement('b');
-        abvgd.innerText = ' ' + text;
-        document.getElementById(id).appendChild(abvgd);
-    }
-    concatBoldTextToELement('total-words-f', totalWords);
+    function concatBoldTextToELement(id) {
+      document.getElementById(id).innerHTML = totalWords;
+    }    
+    concatBoldTextToELement('total-words-f');
 </script>
