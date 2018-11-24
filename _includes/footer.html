@@ -1,8 +1,47 @@
 <footer class="footer-distributed">
   <div class="container">
     <div class="footer">
-      <p>{{ site.author }} &copy; {{ site.copyright }}-{{ 'now' | date: "%Y" }}</p>
-      {% include social.html %}
+      <div class="row">
+          <div class="col-md-2 coffset-md-1 col-sm-5 col-xs-12 statistics stats-el1">
+            <div class="stats">
+              <i class="fas fa-american-sign-language-interpreting fa-2x"></i>
+              <p id="total-words-f"></p>
+              <span>Слів</span>
+            </div>
+          </div>
+          <div class="col-md-2 offset-md-1 col-sm-5 col-xs-12 statistics stats-el2">
+            <div class="stats">
+              <i class="fas fa-glass-martini-alt fa-2x"></i>
+              <p>{{ site.posts.size }}</p>
+              <span>Статей</span>
+            </div>
+          </div>
+          <div class="col-md-2 offset-md-1 col-sm-5 col-xs-12 statistics stats-el3">
+            <div class="stats">
+              <i class="fas fa-cat fa-2x"></i>
+              <p>{{ site.tags | size % }}</p>
+              <span>Міток</span>
+            </div>
+          </div>
+          <div class="col-md-3 offset-md-1 col-sm-5 col-xs-12">
+            {% include social.html %}
+            <h6>bot Декарт &copy; {{ site.copyright }}-{{ 'now' | date: "%Y" }}</h6>
+          </div>
+          </div>
+
+        </div>
     </div>
-  </div>
 </footer>
+<script>
+    var totalWords = [
+        {% for post in site.posts %}
+            {{ post.content | number_of_words }},
+        {% endfor %}
+    ].reduce((a, b) => a + b, 0);
+    function concatBoldTextToELement(id, text) {
+        var abvgd = document.createElement('b');
+        abvgd.innerText = ' ' + text;
+        document.getElementById(id).appendChild(abvgd);
+    }
+    concatBoldTextToELement('total-words-f', totalWords);
+</script>

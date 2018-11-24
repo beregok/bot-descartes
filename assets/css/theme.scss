@@ -87,7 +87,8 @@ a:hover {
 //********************************************************
 ul.social-media {
   text-align: center;
-  padding: 0 0 10px 0;
+  padding: 0 0 5px 0;
+  margin-bottom: 0.1rem;
   li {
     display: inline-block;
   }
@@ -533,6 +534,7 @@ a.page.active {
 //********************************************************
 .footer {
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .footer-distributed {
@@ -546,6 +548,45 @@ a.page.active {
   width: 100%;
   position: absolute;
 }
+
+// Block statistic
+.statistics .stats {
+  margin-bottom: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.statistics .stats:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+.statistics p {
+  font-size: 18pt;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.statistics span {
+  font-size: 14pt;
+}
+.stats-el1 {
+  color: #F4F799;
+}
+.stats-el1 span {
+  color: #F1F73E;
+}
+.stats-el2 {
+  color: #C6F27E;
+}
+.stats-el2 span {
+  color: #A4E838;
+}
+.stats-el3 {
+  color: #8AF26D;
+}
+.stats-el3 span {
+  color: #42C91C;
+}
+
+////
+
 
 .box h3{
 	text-align:center;

@@ -9,7 +9,7 @@ url: https://bot-descartes.netlify.com/
 # For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
 baseurl: '/'
 
-author: Bot_Декарт. Каталог статей з математики
+author: bot Декарт. Каталог статей з математики
 copyright: 2018
 
 share:
@@ -22,10 +22,7 @@ share:
 
 social:
   github: beregok
-  stackoverflow: ''
-  linkedin:
-  instagram: ''
-  lastfm: ''
+  linkedin: beregok
   rss: feed.xml
 
 # Google Analytics key, leave blank to ignore
