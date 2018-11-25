@@ -2,35 +2,34 @@
   <div class="container">
     <div class="footer">
       <div class="row">
-          <div class="col-md-2 coffset-md-1 col-sm-5 col-xs-12 statistics stats-el1">
-            <div class="stats">
-              <i class="fas fa-american-sign-language-interpreting fa-2x"></i>
-              <p id="total-words-f" class="count"></p>
-              <span>Слів</span>
-            </div>
-          </div>
-          <div class="col-md-2 offset-md-1 col-sm-5 col-xs-12 statistics stats-el2">
-            <div class="stats">
-              <i class="fas fa-glass-martini-alt fa-2x"></i>
-              <p class="count">{{ site.posts.size }}</p>
-              <span>Статей</span>
-            </div>
-          </div>
-          <div class="col-md-2 offset-md-1 col-sm-5 col-xs-12 statistics stats-el3">
-            <div class="stats">
-              <i class="fas fa-cat fa-2x"></i>
-              <p class="count">{{ site.tags | size % }}</p>
-              <span>Міток</span>
-            </div>
-          </div>
-          <div class="col-md-3 offset-md-1 col-sm-5 col-xs-12">
-            {% include social.html %}
-            <h6>bot Декарт &copy; {{ site.copyright }}-{{ 'now' | date: "%Y" }}</h6>
-          </div>
-          </div>
-
+        <div class="col-md-3 offset-md-1 col-sm-5 col-xs-12">
+          {% include social.html %}
+          <h6>bot Декарт &copy; {{ site.copyright }}-{{ 'now' | date: "%Y" }}</h6>
         </div>
+        <div class="col-md-2 coffset-md-1 col-sm-5 col-xs-12 statistics stats-el1">
+          <div class="stats">
+            <i class="fas fa-american-sign-language-interpreting fa-2x"></i>
+            <p id="total-words-f" class="count"></p>
+            <span>Слів</span>
+          </div>
+        </div>
+        <div class="col-md-2 offset-md-1 col-sm-5 col-xs-12 statistics stats-el2">
+          <div class="stats">
+            <i class="fas fa-glass-martini-alt fa-2x"></i>
+            <p class="count">{{ site.posts.size }}</p>
+            <span>Статей</span>
+          </div>
+        </div>
+        <div class="col-md-2 offset-md-1 col-sm-5 col-xs-12 statistics stats-el3">
+          <div class="stats">
+            <i class="fas fa-cat fa-2x"></i>
+            <p class="count">{{ site.tags | size % }}</p>
+            <span>Міток</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </footer>
 <script type="text/javascript">
     var totalWords = [
