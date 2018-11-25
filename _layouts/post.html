@@ -14,7 +14,7 @@ layout: compress
                   <div class="post-meta">
                     <div class="post-time">
                       <i class="far fa-clock"></i>
-                      <time>{{ page.date | date_to_string }}</time>
+                      <time>{% include date-page-ua.html date=page.date %}</time>
                     </div>
                     <ul>
                       {% for tag in page.tags %}
