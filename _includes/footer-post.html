@@ -32,12 +32,13 @@
     </div>
   </div>
 </footer>
+
 <script type="text/javascript">
     var totalWords = [
-        {% for post in site.posts %}
-            {{ post.content | number_of_words }},
-        {% endfor %}
-    ].reduce((a, b) => a + b, 0);
+    {% for post in site.posts %}
+      {{ post.content | number_of_words }},
+    {% endfor %}
+  ].reduce((a, b) => a + b, 0);
     function concatBoldTextToELement(id) {
       document.getElementById(id).innerHTML = totalWords;
     }
