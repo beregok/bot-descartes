@@ -4,6 +4,6 @@ permalink: "api/journals.json"
 
 {{ site.data.journals |
    flatten_hash |
-   filter_fields: 'name,publisher,number,imgjpg,imgwebp,datetime', |
+   filter_fields: 'name,publisher,number,imgjpg,imgwebp,datetime' |
    wrap_with_key: 'journals' |
    jsonify }}

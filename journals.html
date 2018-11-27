@@ -1,0 +1,42 @@
+---
+layout: page
+title: Каталог журналів
+---
+
+{% for year in site.data.journals %}
+  {% assign months = year[1] %}
+  {% for month in months %}
+    {% assign journals = month[1] %}
+    {% for journal_data in journals %}
+      {% assign journal = journal_data[1] %}
+      <h2 class="post-title">{{ journal.name }} №{{ journal.number }}
+          <a href="{{ post.url | relative_url }}"></a>
+      </h2>
+      <div class="post-meta">
+          <div class="post-time">
+              <i class="far fa-clock"></i>
+              <time datetime='{{ post.date | date: "%Y-%m-%d" }}'>{% include date-data-ua.html date=journal.datetime %}</time>
+          </div>
+          <ul><li>{{ journal.publisher }}</li>
+          </ul>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 media">
+          <a href="{{ site.url }}/{{ journal.img }}" data-fancybox="images" data-caption="{{ journal.name }} №{{ journal.number }}">
+            <picture>
+              <source srcset="{{ site.url }}/{{ journal.img | replace: "jpg", "webp" }}" type="image/webp">
+              <img src="{{ site.url }}/{{ journal.img }}" alt="{{ journal.publisher }}.{{ journal.name }}" class="figure-img img-fluid">
+            </picture>
+          </a>
+        </div>
+        <div class="post-descr col-sm-10">
+          <ul class="">
+          {% for article in journal.articles %}
+            <li><a href="{{ article.url | relative_url }}">{{ article.title }}</a></li>
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endfor %}
+  {% endfor %}
+{% endfor %}

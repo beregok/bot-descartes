@@ -1,9 +1,14 @@
-name: "Random Meetup April 2017"
+name: "Математика в школах України"
 publisher: "Основа"
-number: "9(565)"
-imgjpg: "Come join us for some snacks and chat about random stuff."
-imgwebp: "London, UK"
-datetime: 2017-04-04 20:00:00
+number: "13 (565)"
+datetime: 2018-05-09 20:00:00
+img: articles/18-05-13_565/9_565.jpg
 articles:
-  - url: asdsadasd
-    title: ddfsfsdfs
+  - title: "Подвійний інтернет-марафон: подвійна сила змін!"
+    url: articles/18-05-13_565/9-565-68414.pdf
+  - title: "Задачі з параметрами на ЗНО"
+    url: articles/18-05-13_565/9-565-68415.pdf
+  - title: "Проект «Підлітковий екстрим: задоволення чи небезпека?»"
+    url: articles/18-05-13_565/9-565-68416.pdf
+  - title: "Патріотичні задачі на уроках математики: навчаємо та виховуємо любов до рідної держави одночасно!"
+    url: articles/18-05-13_565/9-565-68417.pdf
