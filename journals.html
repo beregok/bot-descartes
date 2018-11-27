@@ -30,7 +30,7 @@ title: Каталог журналів
           </a>
         </div>
         <div class="post-descr col-sm-10">
-          <ul class="">
+          <ul class="jornal-post">
           {% for article in journal.articles %}
             <li><a href="{{ article.url | relative_url }}">{{ article.title }}</a></li>
           {% endfor %}
