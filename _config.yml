@@ -27,7 +27,7 @@ social:
 
 permalink: /:year/:month/:title
 
-plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap, jekyll-algolia]
+plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap, jekyll-algolia, jekyll-random]
 
 algolia:
   application_id: JW3EBI2XYO
