@@ -21,20 +21,20 @@ title: Каталог журналів
           </ul>
       </div>
       <div class="row">
-        <div class="col-sm-2 media">
+        <div class="post-descr col-sm-9">
+          <ul class="jornal-post">
+          {% for article in journal.articles %}
+            <li><a href="{{ article.url | relative_url }}">{{ article.title }}</a></li>
+          {% endfor %}
+          </ul>
+        </div>
+        <div class="col-sm-3 media">
           <a href="{{ site.url }}/{{ journal.img }}" data-fancybox="images" data-caption="{{ journal.name }} №{{ journal.number }}">
             <picture>
               <source srcset="{{ site.url }}/{{ journal.img | replace: "jpg", "webp" }}" type="image/webp">
               <img src="{{ site.url }}/{{ journal.img }}" alt="{{ journal.publisher }}.{{ journal.name }}" class="figure-img img-fluid">
             </picture>
           </a>
-        </div>
-        <div class="post-descr col-sm-10">
-          <ul class="jornal-post">
-          {% for article in journal.articles %}
-            <li><a href="{{ article.url | relative_url }}">{{ article.title }}</a></li>
-          {% endfor %}
-          </ul>
         </div>
       </div>
     {% endfor %}
