@@ -20,7 +20,7 @@ layout: page
     </ul>
 </div>
 <div class="row">
-  <div class="post-descr col-sm-10">
+  <div class="post-descr col-sm-9">
     <p>
         {{ post.content | strip_html | truncatewords:50 }} <a href="{{ post.url | relative_url }}">&rArr;</a>
     </p>
@@ -28,7 +28,7 @@ layout: page
     <span><em>{{ post.authors }}</em></span>
     {% endif %}
   </div>
-  <div class="col-sm-2 media">
+  <div class="col-sm-3 media">
     {% if post.image %}
     <a href="{{ post.url | relative_url }}">
       <picture>
