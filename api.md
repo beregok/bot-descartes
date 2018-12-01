@@ -20,7 +20,7 @@ API зараз повертає лише один формат: json (корот
 
 ## Запит javascript
 {% highlight javascript %}
-fetch("https://bot-descartes.netlify.com/api/articles.json")
+fetch('https://bot-descartes.netlify.com/api/articles.json')
  .then(res => res.json())
  .then(res => res.articles)
  .then(articles => {
