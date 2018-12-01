@@ -5,9 +5,9 @@ permalink: "api/articles.json"
 {
   "articles": [
     {% for post in site.posts %}{% unless post.link %}{
-      "url": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
       "title": {{ post.title | jsonify }},
       "file": "{% for resource in post.resources %}{{ resource.link | prepend: site.baseurl | prepend: site.url }}{% endfor %}",
+      "img": "{% if post.image %}{{ site.url }}/{{ post.image }}{% endif %}",
       "date": "{{ post.date | date_to_rfc822 }}"
       }{% unless forloop.last %},
       {% endunless %}{% endunless %}{% endfor %}
