@@ -23,15 +23,17 @@ API зараз повертає лише один формат: json (корот
 fetch("https://bot-descartes.netlify.com/api/articles.json")
  .then(res => res.json())
  .then(res => res.articles)
- .then(({
-   url,
-   title,
-   file,
-   date
- }) => {
-   console.log(url, title, file, date);    
+ .then(articles => {
+   articles.forEach(({
+     url,
+     title,
+     file,
+     date
+   }) => {
+     console.log(url, title, file, date);
+   })
  })
- {% endhighlight %}
+{% endhighlight %}
 
 ## Bідповідь JSON
 {% highlight json %}
