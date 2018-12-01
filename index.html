@@ -20,6 +20,14 @@ layout: page
     </ul>
 </div>
 <div class="row">
+  <div class="post-descr col-sm-10">
+    <p>
+        {{ post.content | strip_html | truncatewords:50 }} <a href="{{ post.url | relative_url }}">&rArr;</a>
+    </p>
+    {% if post.authors %}
+    <span><em>{{ post.authors }}</em></span>
+    {% endif %}
+  </div>
   <div class="col-sm-2 media">
     {% if post.image %}
     <a href="{{ post.url | relative_url }}">
@@ -28,14 +36,6 @@ layout: page
         <img src="{{ site.url }}/{{ post.image }}" alt="{{ post.description }}" class="align-self-start mr-3">
       </picture>
     </a>
-    {% endif %}
-  </div>
-  <div class="post-descr col-sm-10">
-    <p>
-        {{ post.content | strip_html | truncatewords:50 }}
-    </p>
-    {% if post.authors %}
-    <span><em>{{ post.authors }}</em></span>
     {% endif %}
   </div>
 </div>
