@@ -49,6 +49,10 @@ Transparent Textures
 
 <https://www.transparenttextures.com/>
 
+Pure CSS3 Gradient Background Animation
+
+<https://codepen.io/P1N2O/pen/pyBNzX>
+
 ### JavaScript Tag Cloud
 <https://geekthis.net/post/javascript-tag-cloud/>
 
