@@ -45,9 +45,9 @@ $background-pattern: '45-degree-fabric-light.png';
 body {
   height: 100%;
   color: $font-color;
-  /*background: linear-gradient(-45deg, #2D3436, #04619F, #1B5735, #C38FD6);*/
+  background: linear-gradient(-45deg, #2D3436, #04619F, #1B5735, #C38FD6);
   /*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);*/
-  background: linear-gradient(-45deg, #B45133, #561930, #236F8A, #20816A);
+  /*background: linear-gradient(-45deg, #B45133, #561930, #236F8A, #20816A);*/
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
