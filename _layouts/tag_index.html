@@ -9,10 +9,10 @@ layout: page
       {% for post in site.posts %}
         {% for tag in post.tags %}
           {% if tag == page.tag %}
+          <time>{% include date-post-ua.html date=post.date %}</time>
           <li class="archive_list">
-            <time>{% include date-post-ua.html date=post.date %}</time>
             <a class="archive_list_article_link" href='{{ post.url | relative_url }}'>{{post.title}}</a>
-            <p>{{ post.content | strip_html | truncatewords:50 }}</p>
+            <p>{{ post.content | strip_html | truncatewords:50 }}</p>            
           </li>
           {% endif %}
         {% endfor %}
