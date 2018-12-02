@@ -3,6 +3,13 @@ layout: page
 title: API сайту
 ---
 
+<p>
+  <picture>
+    <source srcset="assets/images/api-poroh.webp" type="image/webp">
+    <img src="assets/images/api-poroh.jpg" alt="Дзвонiть! Пишiть!" class="rounded mx-auto d-block">
+  </picture>
+</p>
+
 # <i class="fab fa-quinscape"></i> API сайту
 
 Ось деяка інформація, з якою я можу поділитися у формі API JSON.

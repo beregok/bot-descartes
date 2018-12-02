@@ -6,6 +6,13 @@ title: Про сайт
 # <i class="fas fa-user-astronaut"></i> Деяка інформація
 .. про те, як цей сайт крутий;)
 
+<p>
+  <picture>
+    <source srcset="assets/images/KY-Nailing-Machine.webp" type="image/webp">
+    <img src="assets/images/KY-Nailing-Machine.jpg" alt="Дзвонiть! Пишiть!" class="rounded mx-auto d-block">
+  </picture>
+</p>
+
 # Використані ресурси та першоджерела
 
 ## Статичний генератор сайту Jekyll

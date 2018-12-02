@@ -3,6 +3,13 @@ layout: page
 title: Надіслати повідомлення
 ---
 
+<p>
+  <picture>
+    <source srcset="assets/images/52.webp" type="image/webp">
+    <img src="assets/images/52.jpg" alt="Дзвонiть! Пишiть!" class="rounded mx-auto d-block">
+  </picture>
+</p>
+
 # <i class="fas fa-pencil-alt"></i> Написати повідомлення
 
 <form name="contact" netlify-honeypot="bot-field" data-form-output="form-output-global" data-form-type="contact" method="POST" action="thank-you" netlify>
