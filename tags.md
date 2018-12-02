@@ -34,6 +34,7 @@ title: Tags
 	    	}
 	    }
 	  </script>
+		<br>
 		<div>
 	  {% for tag in tags %}
 		{% assign colors = 'FF5852|FF9000|FFD300|3DCD49|0089D7|9E44C4|cebc88|8AA9C5|00897B|7CB342|FFB300|F4511E' | split: '|' %}
