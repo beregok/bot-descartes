@@ -6,8 +6,13 @@ title: Tags
 
 <div class="page-content wc-container">
 	<div class="post" id="tagcloud">
-		<h1><i class="fas fa-tags"></i> Мітки</h1>  
-
+		<h1><i class="fas fa-tags"></i> Мітки</h1>
+		<div>
+		  <picture>
+		    <source srcset="assets/images/tags.webp" type="image/webp">
+		    <img src="assets/images/tags.jpg" alt="Дзвонiть! Пишiть!" class="rounded mx-auto d-block">
+		  </picture>
+		</div>
 		{% assign tags = site.tags | sort %}
 	  {% assign maxsize = site.tags | size %}
 	  <script type="text/javascript">
@@ -29,25 +34,18 @@ title: Tags
 	    	}
 	    }
 	  </script>
+		<div>
 	  {% for tag in tags %}
 		{% assign colors = 'FF5852|FF9000|FFD300|3DCD49|0089D7|9E44C4|cebc88|8AA9C5|00897B|7CB342|FFB300|F4511E' | split: '|' %}
 				<a href="{{ '/tag/' | append: tag[0] | relative_url }}" class="btn bttag" style="color: #{{ forloop.index | random_item: colors }};" data-toggle="tooltip" data-placement="right" title="{{ tag[1].size }}">
 	        {{ tag[0] | replace:'-', ' ' }}
 				</a>
 	  {% endfor %}
+		</div>
 	  <script type="text/javascript">
 	    var tc = document.getElementById('tagcloud'); /* Підключаємо функцію пошуку лементів у батьківському*/
 	    tagcloud(tc,'a'); /* Змінюємо атрибути */
 	  </script>
-		<style>
-
-		</style>
 	</div>
 </div>
-
-<p>
-  <picture>
-    <source srcset="assets/images/tags.webp" type="image/webp">
-    <img src="assets/images/tags.jpg" alt="Дзвонiть! Пишiть!" class="rounded mx-auto d-block">
-  </picture>
-</p>
+<br>
