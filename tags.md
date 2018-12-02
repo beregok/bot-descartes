@@ -44,3 +44,10 @@ title: Tags
 		</style>
 	</div>
 </div>
+
+<p>
+  <picture>
+    <source srcset="assets/images/tags.webp" type="image/webp">
+    <img src="assets/images/tags.jpg" alt="Дзвонiть! Пишiть!" class="rounded mx-auto d-block">
+  </picture>
+</p>
