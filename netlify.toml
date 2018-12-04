@@ -4,3 +4,8 @@
 [build]
   command = "jekyll build && jekyll algolia"
   publish = "_site"
+
+[[headers]]
+  for = "https://bot-descartes.netlify.com/api/articles.json"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
