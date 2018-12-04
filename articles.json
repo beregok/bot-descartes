@@ -11,7 +11,8 @@ permalink: "api/articles.json"
       "title": {{ post.title | jsonify }},
       "file": "{% for resource in post.resources %}{{ resource.link | prepend: site.baseurl | prepend: site.url }}{% endfor %}",
       "img": "{% if post.image %}{{ site.url }}/{{ post.image }}{% endif %}",
-      "date": "{{ post.date | date_to_rfc822 }}"
+      "date": "{{ post.date | date_to_rfc822 }}",
+      "strippost": {{ post.content | truncatewords:50 | jsonify  }}
       }{% unless forloop.last %},
       {% endunless %}{% endunless %}{% endfor %}
   ]
