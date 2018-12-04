@@ -12,6 +12,11 @@ baseurl: '/'
 author: bot Декарт. Каталог статей з математики
 copyright: 2018
 
+# Api
+namezercalo: Bot-Декарт
+descriptionzercalo: Каталог статей з математики
+
+# Share
 share:
   facebook: true
   twitter: true
@@ -20,6 +25,7 @@ share:
   pinterest: true
   email: true
 
+# Link
 social:
   github: beregok
   linkedin: beregok
@@ -29,6 +35,7 @@ permalink: /:year/:month/:title
 
 plugins: [jekyll-paginate, jekyll-feed, jekyll-seo-tag, jekyll-sitemap, jekyll-algolia, jekyll-random]
 
+# Algolia
 algolia:
   application_id: JW3EBI2XYO
   index_name: bot-descartes
