@@ -6,6 +6,6 @@
   publish = "_site"
 
 [[headers]]
-  for = "https://bot-descartes.netlify.com/api/articles.json"
+  for = "/api/*"
   [headers.values]
     Access-Control-Allow-Origin = "*"
