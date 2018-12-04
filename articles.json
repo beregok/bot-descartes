@@ -3,9 +3,9 @@ permalink: "api/articles.json"
 ---
 
 {
-  "Name": "{{ namezercalo }}",
-  "description": "{{ descriptionzercalo }}",
-  "formed": {{ copyright }},
+  "Name": "{{ site.namezercalo }}",
+  "description": "{{ site.descriptionzercalo }}",
+  "formed": "{{ site.copyright }}",
   "articles": [
     {% for post in site.posts %}{% unless post.link %}{
       "title": {{ post.title | jsonify }},
