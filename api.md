@@ -16,6 +16,12 @@ title: API сайту
 
 API зараз повертає лише один формат: json (короткий для JavaScript Object Notation). Це, безумовно, найбільш бажаний формат для розробників.
 
+## Приклад
+
+Сайт-дзеркало зі списком статей
+
+<https://black-mirror-descartes.netlify.com/>
+
 ##  Статті
 
 <https://bot-descartes.netlify.com/api/articles.json>
