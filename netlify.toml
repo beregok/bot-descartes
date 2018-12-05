@@ -9,3 +9,11 @@
   for = "/api/*"
   [headers.values]
     Access-Control-Allow-Origin = "*"
+
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=360000"
+
+    for = "/articles/*"
+    [headers.values]
+      Cache-Control = "public, max-age=360000"
