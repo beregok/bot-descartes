@@ -9,8 +9,8 @@ title: Tags
 		<h1><i class="fas fa-tags"></i> Мітки</h1>
 		<div>
 		  <picture>
-		    <source srcset="assets/images/tags.webp" type="image/webp">
-		    <img src="assets/images/tags.jpg" alt="Дзвонiть! Пишiть!" class="rounded mx-auto d-block">
+		    <source srcset="assets/images/i-rulety-49x.webp" type="image/webp">
+		    <img src="assets/images/i-rulety-49x.jpg" alt="Мітки!" class="rounded mx-auto d-block">
 		  </picture>
 		</div>
 		{% assign tags = site.tags | sort %}
