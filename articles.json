@@ -9,8 +9,8 @@ permalink: "api/articles.json"
   "articles": [
     {% for post in site.posts %}{% unless post.link %}{
       "title": {{ post.title | jsonify }},
-      "file": "{% for resource in post.resources %}{{ resource.link | prepend: site.baseurl | prepend: site.url }}{% endfor %}",
-      "img": "{% if post.image %}{{ site.url }}/{{ post.image }}{% endif %}",
+      "file": "{% for resource in post.resources %}{{ resource.link | prepend: site.url }}{% endfor %}",
+      "img": "{% if post.image %}{{ site.url }}{{ post.image }}{% endif %}",
       "date": "{{ post.date | date_to_rfc822 }}",
       "strippost": {{ post.content | strip_html | truncatewords:50 | jsonify  }}
       }{% unless forloop.last %},
