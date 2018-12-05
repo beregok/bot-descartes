@@ -5,15 +5,26 @@
   command = "jekyll build && jekyll algolia"
   publish = "_site"
 
+# Json
 [[headers]]
   for = "/api/*"
   [headers.values]
     Access-Control-Allow-Origin = "*"
 
-  for = "/assets/*"
+# Cache
+[[headers]]
+  for = "*.js" # js files should be set this way
   [headers.values]
-    Cache-Control = "public, max-age=360000"
-
-    for = "/articles/*"
-    [headers.values]
-      Cache-Control = "public, max-age=360000"
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "*.css" # css files too
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/articles/*.jpg" # jpg files too
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/articles/*.webp" # wepp files too
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
