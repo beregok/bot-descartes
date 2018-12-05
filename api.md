@@ -5,8 +5,8 @@ title: API сайту
 
 <p>
   <picture>
-    <source srcset="assets/images/api-poroh.webp" type="image/webp">
-    <img src="assets/images/api-poroh.jpg" alt="Дзвонiть! Пишiть!" class="rounded mx-auto d-block">
+    <source srcset="assets/images/1-min-46x.webp" type="image/webp">
+    <img src="assets/images/1-min-46x.jpg" alt="Апі!" class="rounded mx-auto d-block">
   </picture>
 </p>
 
