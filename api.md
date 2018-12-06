@@ -20,7 +20,7 @@ API зараз повертає лише один формат: json (корот
 
 Сайт-дзеркало зі списком статей
 
-<https://black-mirror-descartes.netlify.com/>
+<https://descartes.pp.ua/>
 
 ##  Статті
 
