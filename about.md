@@ -8,8 +8,8 @@ title: Про сайт
 
 <p>
   <picture>
-    <source srcset="assets/images/KY-Nailing-Machine.webp" type="image/webp">
-    <img src="assets/images/KY-Nailing-Machine.jpg" alt="Дзвонiть! Пишiть!" class="rounded mx-auto d-block">
+    <source srcset="assets/images/hannah-gibbs.webp" type="image/webp">
+    <img src="assets/images/hannah-gibbs.jpg" alt="Про сайт" class="rounded mx-auto d-block">
   </picture>
 </p>
 
