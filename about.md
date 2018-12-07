@@ -128,11 +128,3 @@ bytes used:  header:            627  (0.3%)
 [https://tools.pingdom.com/](https://tools.pingdom.com/#59ca31a57d800000)
 
 [https://developers.google.com/speed/pagespeed/insights/](https://developers.google.com/speed/pagespeed/insights/?hl=ru&url=https%3A%2F%2Fbot-descartes.netlify.com%2F&tab=desktop)
-
-# Як копі-пастяться статті
-
-Запис того як грабляться статті з відомого порталу
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wmK6GdGRyW4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>

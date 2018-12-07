@@ -27,8 +27,8 @@ share:
 
 # Link
 social:
-  github: beregok/bot-descartes
-  linkedin: beregok
+  github: #beregok/bot-descartes
+  linkedin: #beregok
   rss: feed.xml
 
 permalink: /:year/:month/:title
